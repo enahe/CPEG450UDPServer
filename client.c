@@ -118,6 +118,7 @@ int main () {
 		windowEnd = windowLength *2;
         }
 	for (int i = seqNum; i < windowEnd; i++) {
+                rewind(recievedFile); 
                 if (windowCorrect[i] = 0) { 
 			length = read(clientSocket, data, sizeof(data));
                          
